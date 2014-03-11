@@ -88,7 +88,7 @@ class Metasploit3 < Msf::Auxiliary
     :active => true
   )
       elsif
-        print_status("Did you set the username?? \n #{res.code}\n #{res.body}")
+        print_status("Did you set the username?? \n #{res.code}")
       end
     end
     rescue ::Rex::ConnectionRefused, ::Rex::HostUnreachable, ::Rex::ConnectionTimeout
